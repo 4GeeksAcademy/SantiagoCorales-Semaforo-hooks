@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 export const Hooks = () => {
   const [color, setColor] = useState("red");
-  const getLightClass = (lightColor) => {
+  const getLightClass = (paletaDeColores) => {
     return `
       rounded-circle 
-      ${lightColor === "red" ? "bg-danger" : lightColor === "yellow" ? "bg-warning" : "bg-success"} 
-      ${color === lightColor ? "active-light" : "inactive-light"}
+      ${paletaDeColores === "red" ? "bg-danger" : paletaDeColores === "yellow" ? "bg-warning" : "bg-success"} 
+      ${color === paletaDeColores ? "active-light" : "inactive-light"}
     `;
   };
 
